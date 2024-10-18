@@ -9,11 +9,11 @@ export default function FaceOverlay({face} : {face: Face}) {
           key={1}
           style={{
             position: 'absolute',
-            left: (face.landmarks.LEFT_EYE.x * -1) + 250,
-            top: face.landmarks.LEFT_EYE.y - 525,
-            width: 20,
+            left: (face.landmarks.LEFT_EYE.x * -1) + 180,
+            top: face.landmarks.LEFT_EYE.y - 400,
+            width: 50,
             height: 20,
-            backgroundColor: 'green',
+            backgroundColor: 'black',
             zIndex: 10
         }}
       />
@@ -21,11 +21,11 @@ export default function FaceOverlay({face} : {face: Face}) {
           key={1}
           style={{
             position: 'absolute',
-            left: (face.landmarks.RIGHT_EYE.x * -1) + 250,
-            top: face.landmarks.RIGHT_EYE.y - 525,
-            width: 20,
+            left: (face.landmarks.RIGHT_EYE.x * -1) + 180,
+            top: face.landmarks.RIGHT_EYE.y - 400,
+            width: 50,
             height: 20,
-            backgroundColor: 'green',
+            backgroundColor: 'black',
             zIndex: 10
         }}
       />

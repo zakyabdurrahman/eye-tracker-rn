@@ -10,7 +10,10 @@ import FaceOverlay from './FaceOverlay';
 export default function App() {
   const [facesArray, setFaces] = useState<Face[]>([]);
   const faceDetectOpts = useRef<FaceDetectionOptions>({
-    landmarkMode: 'all'
+    landmarkMode: 'all',
+    autoScale: true,
+    windowHeight: 400,
+    windowWidth: 400
   }).current
 
   const device = useCameraDevice('front');
